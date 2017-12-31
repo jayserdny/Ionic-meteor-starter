@@ -1,28 +1,36 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "downlevelIteration": true,
     "lib": [
       "dom",
       "es2015"
     ],
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es5",
-    "typeRoots": [
-      "../node_modules/@types"
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "noImplicitAny": false,
+    "types": [
+      "@types/meteor"
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/api/**/*.ts"
   ],
   "exclude": [
     "node_modules",
     "src/**/*.spec.ts",
-    "src/**/__tests__/*.ts"
+    "src/**/__tests__/*.ts",
+    "src/api/node_modules",
+    "src/api"
   ],
   "compileOnSave": false,
   "atom": {
