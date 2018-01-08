@@ -13,20 +13,40 @@
         <ion-input placeholder="Type your name"
                    [(ngModel)]="currentName"></ion-input>
       </ion-col>
-
       <ion-col col-3>
         <button ion-button
                 (tap)="callServer()">Submit</button>
       </ion-col>
     </ion-row>
-
     <ion-row>
       <ion-col col-12>
         {{ serverResults }}
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button (tap)="openPage('LoginPage')">
+          Login
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button (tap)="openPage('RegisterPage')">
+          Register
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button (tap)="openPage('ProtectedPage')">
+          Protected
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        current user: {{ currentUser }}
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
-
-
 
 </ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-input type="text" 
+                   placeholder="Email"
+                   [(ngModel)]="email"></ion-input>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-input type="text" 
+                   placeholder="Username"
+                   [(ngModel)]="username"></ion-input>
+      </ion-col>
+
+      <ion-col col-12>
+        <ion-input type="text" 
+                   placeholder="Full Name"
+                   [(ngModel)]="name"></ion-input>
+      </ion-col>
+  
+      <ion-col col-12>
+        <ion-input type="password" 
+                   placeholder="Password"
+                   [(ngModel)]="password"></ion-input>
+      </ion-col>
+  
+      <ion-col col-12>
+        <button ion-button block round (tap)="register()">
+          Register
+        </button>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>
+  
