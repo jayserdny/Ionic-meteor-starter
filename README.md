@@ -15,3 +15,7 @@ Ionic meteor starter for those who wants to use Meteor backend with Ionic client
 
 1) [Setting up Ionic 3 with MeteorJs Backend](https://steemit.com/utopian-io/@jaysermendez/setting-up-ionic-3-with-meteorjs-backend)
 2) [Ionic 3 Meteor - First server methods](https://steemit.com/utopian-io/@jaysermendez/ionic-3-meteor-first-server-methods)
+
+## Intermediate
+
+1) [Ionic 3 Meteor - Auth Implementation](https://steemit.com/utopian-io/@jaysermendez/ionic-3-meteor-auth-implementation)
